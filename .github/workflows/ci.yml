@@ -1,0 +1,13 @@
+name: Git Workshop Demo
+
+on:
+  push:
+    branches:
+        - 'features/**'
+        - 'hotfix/**'
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "Hello Github Actions"
